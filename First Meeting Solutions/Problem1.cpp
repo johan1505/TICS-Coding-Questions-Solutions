@@ -1,7 +1,12 @@
 #include <vector>
 #include <unordered_map>
-
 using namespace std;
+
+//------------------------------------------------------Question------------------------------------------------------//
+
+// Given a sorted array of numbers, find two numbers that add up to a sum. Return the indexes of these two numbers
+
+//------------------------------------------------Brute Force Approach------------------------------------------------//
 
 // Time Complexity: O(N ^ 2)
 // Space Complexity: O(1)
@@ -18,6 +23,9 @@ vector<int> findPair(const vector<int>& nums, int target){
     // Return an empty vector signal no answer was found
     return {};
 }
+
+
+//------------------------------------------------Hash Map Approach------------------------------------------------//
 
 // Time Complexity: O(N)
 // Space Complexity: O(N)
@@ -44,6 +52,8 @@ vector<int> findPairHashMap(const vector<int>& nums, int target){
     return {};
 }
 
+
+//------------------------------------------------Optimal Approach------------------------------------------------//
 
 // Time Complexity: O(N)
 // Space Complexity: O(1)
