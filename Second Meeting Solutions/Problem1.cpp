@@ -35,7 +35,7 @@ int totalAmountOfMilkTea(Room* start){
         milkTeaCollected += current->milkTea;
         // Iterate over the rooms that can be accessed from the current room
         for(Room* roomToVisit : current->keys){
-            //  If the room to visit has not been visited
+            //  If the room to visit has not been visite
             if (roomsVisited.find(roomToVisit->roomNumber) == roomsVisited.end()){
                 // Add it to the set of visited rooms
                 roomsVisited.insert(roomToVisit->roomNumber);
